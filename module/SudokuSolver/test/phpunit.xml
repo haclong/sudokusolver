@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : phpunit.xml
+    Created on : 13 octobre 2013, 22:23
+    Author     : haclong
+    Description:
+        Purpose of the document follows.
+-->
+
+<phpunit bootstrap="Bootstrap.php" colors="true">
+    <testsuites>
+        <testsuite name="zf2tutorial">
+            <directory>./SudokuSolverTest</directory>
+        </testsuite>    
+    </testsuites>
+</phpunit>

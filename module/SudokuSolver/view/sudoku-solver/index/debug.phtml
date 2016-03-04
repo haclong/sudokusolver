@@ -1,0 +1,25 @@
+<table border="1">
+<?php
+foreach($cases as $row)
+{
+?><tr>
+<?php
+    foreach($row as $col)
+    {
+         print("<td width='30 px'>" . $col . "</td>") ;
+    }
+?></tr>
+<?php
+}
+?>
+</table>
+<pre>
+<?php
+print_r($g) ;
+print_r($trois) ;
+print_r($solve) ;
+
+print_r($a) ;
+
+?>
+</pre>

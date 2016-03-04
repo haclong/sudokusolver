@@ -1,0 +1,46 @@
+<form method="post" action="<?php echo $this->url('home', array('size' => count($grid))) ; ?>">
+    
+    <button class="btn btn-default" type="submit" name="submit" value="start">Résoudre</button>
+    <button class="btn btn-default" type="submit" name="submit" value="play">Jouer</button>
+    <button class="btn btn-default" type="submit" name="submit" value="reset">Recommencer</button>
+    <button class="btn btn-default" type="submit" name="submit" value="new">Nouvelle grille</button>
+<p>
+    <div>Insérer les chiffres de départ de la grille.</div>
+    <div>Cliquer sur 'Résoudre' pour que le robot remplisse la grille seul.</div>
+    <div>Cliquer sur 'Jouer' pour résoudre vous meme la grille.</div>
+    <div>Cliquer sur 'Recommencer' pour recommencer la grille.</div>
+    <div>Cliquer sur 'Nouvelle grille' pour vider la grille complètement.</div>
+</p>
+
+<?php
+print($msg) ;
+?>
+
+<table class="sudoku_grid">
+<?php
+foreach($grid as $r => $row)
+{
+?><tr>
+<?php
+    foreach($row as $c => $col)
+    {
+        $bottom = "" ;
+        $right = "" ;
+        if($r % sqrt(count($grid)) == 0) {
+            $bottom = " region_border_bottom" ;
+        }
+        if($c % sqrt(count($row)) == 0) {
+            $right = " region_border_right" ;
+        }
+        print("<td class=\"sudoku_case". $right.$bottom."\"><input type=\"text\" size=\"1\" name=\"k[".$r."][".$c."]\" value=\"" . $col . "\"/></td>") ;
+    }
+?></tr>
+<?php
+}
+?>
+</table>
+</form>
+<pre>
+<?php
+print_r($post) ;
+    ?></pre>
