@@ -28,4 +28,4 @@ Axe d'amélioration
 ------------
 Alors que je n'avais pas achevé cette grille, je me dis que je devrais tenter de coupler le rendu avec du javascript afin que la grille se remplisse au fur et à mesure.
 
-__Explications du code : http://www.haclong.org/en/content/aborder-la-programmation-orient%C3%A9e-objet-par-lexemple-concevoir-un-solveur-de-sudoku.html__
+**Explications du code : http://www.haclong.org/en/content/aborder-la-programmation-orient%C3%A9e-objet-par-lexemple-concevoir-un-solveur-de-sudoku.html**
